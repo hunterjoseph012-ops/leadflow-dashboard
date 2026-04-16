@@ -194,7 +194,7 @@ export default function LeadsTable({
               <th className="px-6 py-3">Email</th>
               <th className="px-6 py-3">Phone</th>
               <th className="px-6 py-3">Status</th>
-              <th className="px-6 py-3">Date Added</th>
+              <th className="px-6 py-3">Channel</th><th className="px-6 py-3">Date Added</th>
             </tr>
           </thead>
           <tbody className="divide-y divide-gray-50">
@@ -208,7 +208,7 @@ export default function LeadsTable({
               filtered.map((lead) => (
                 <tr key={lead.id} className="hover:bg-gray-50 transition-colors">
                   <td className="px-6 py-4 text-sm font-medium text-gray-900">{lead.lead_name}</td>
-                  <td className="px-6 py-4 text-sm text-gray-600">{lead.client_name}</td>
+                  <td className="px-6 py-4 text-sm text-gray-600">{lead.channel || 'widget'}</td><td className="px-6 py-4 text-sm text-gray-600">{lead.client_name}</td>
                   <td className="px-6 py-4 text-sm text-gray-600">{lead.email}</td>
                   <td className="px-6 py-4 text-sm text-gray-600">{lead.phone}</td>
                   <td className="px-6 py-4">
