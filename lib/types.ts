@@ -24,7 +24,9 @@ export interface Lead {
   email: string
   phone: string
   status: LeadStatus
-  date_added: string
+ date_added: string
+  channel: string | null
+  source: string | null
   created_at: string
 }
 
