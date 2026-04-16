@@ -200,7 +200,7 @@ export default function LeadsTable({
           <tbody className="divide-y divide-gray-50">
             {filtered.length === 0 ? (
               <tr>
-                <td colSpan={6} className="px-6 py-12 text-center text-sm text-gray-400">
+                <td colSpan={7} className="px-6 py-12 text-center text-sm text-gray-400">
                   {leads.length === 0 ? 'No leads yet.' : 'No leads match your filters.'}
                 </td>
               </tr>
